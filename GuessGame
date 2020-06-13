@@ -1,0 +1,14 @@
+#Playing guess Game
+secret_number = 0
+secret_limit = 3
+while secret_number < secret_limit:
+#Introduce an integer value to store the record of memory. In case the result is String
+#Will replace it to int value
+    guess = int(input('Guess: '))
+    secret_number = secret_number + 1
+    if guess == secret_number:
+        print('You Pass')
+        break
+else:
+    print('You fail')
+
